@@ -2,6 +2,7 @@ let payRate = 17.30;
 let hoursWorked = 45;
 let regularHours = 40;
 regulaPay = payRate * regularHours
+overTimeRate = 1.5;
 
 if ( hoursWorked <= regularHours ) { 
     console.log(regulaPay); 
@@ -11,11 +12,9 @@ if ( hoursWorked <= regularHours ) {
 
         // 5 hours 
         
-        let incRate = (payRate * 1.5 );  
+        let incRate = (payRate * overTimeRate);  
         let overTimePay = incRate * overTimeHours;
         let totalPay = overTimePay + regulaPay;
-        // let totalPay = regulaPay + overTimepay;
-        // console.log(totalPay);
         console.log(totalPay.toFixed(2));
 
     }
